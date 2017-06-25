@@ -1,0 +1,14 @@
+unbind-key C-b
+
+bind-key C-t send-prefix
+
+bind-key C-r source-file ~/.tmux.conf \; display-message "Reloaded."
+
+set-option -g history-limit 2000
+set-option -g prefix C-t
+set-option -g status-fg white
+set-option -g status-bg black
+set-option -g mouse on
+
+set-window-option -g window-status-current-bg blue
+set-window-option -g window-status-current-fg white
